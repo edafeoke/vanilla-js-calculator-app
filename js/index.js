@@ -70,14 +70,12 @@ const executeFunction = (func) => {
 
 const calculate = () => {
   let ans;
+  // ans = problem.innerText
+  // console.log(Number.isInteger(400));
+
   try {
     ans = eval(problem.innerHTML);
-    {
-      console.log("question: ", problem.innerHTML);
-      console.log("After eval: ", eval(problem.innerHTML));
-      console.log("Type of after eval: ", eval(problem.innerHTML).isInteger);
-    }
-    solution.innerHTML = parseInt(ans).isInteger ? ans : ans.toFixed(4);
+    solution.innerHTML = Number(ans).toPrecision(12)
   } catch (err) {
     solution.innerHTML = "Error";
   }
