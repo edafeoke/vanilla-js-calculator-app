@@ -29,10 +29,10 @@ body {
   flex-direction: column;
   align-items: center;
   width: 250px;
-  border-radius: 39px;
+  border-radius: 25px;
   height: 90vh;
   background-color: var(--calculator-background);
-  box-shadow: 10px 10px 15px #006bb5;
+  box-shadow: 10px 10px 55px #006bb5;
 }
 
 .screen {
@@ -73,6 +73,11 @@ button {
     padding: 10px;
 }
 
+
+button:hover {
+  /* opacity: .2; */
+}
+
 button:nth-child(12) {
   grid-row: 3/5;
   grid-column: 4;
@@ -80,6 +85,8 @@ button:nth-child(12) {
 button:nth-child(16) {
   grid-row: 5;
   grid-column: 3/5;
+  background-color: #1991FF;
+  color: #B2DAFF;
 }
 
 .function {
